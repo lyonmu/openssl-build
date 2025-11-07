@@ -13,7 +13,7 @@
 ```bash
 git submodule update --init
 
-docker run -itd --name openssl openssl:latest
+docker build -f Dockerfile  -t openssl:latest .
 ```
 ## 运行容器
 
