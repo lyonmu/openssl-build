@@ -8,7 +8,7 @@
 - `openssl/`：OpenSSL 源码子模块
 - `README.md`：当前项目说明
 
-当前仓库中的 OpenSSL 子模块版本信息来自 [`openssl/VERSION.dat`](./openssl/VERSION.dat)：
+当前仓库中的 OpenSSL 子模块版本信息来自 [`openssl/VERSION.dat`](https://github.com/openssl/openssl/blob/master/VERSION.dat)：
 
 - 主版本：`4.0.0`
 - 发布日期：`2026-04-14`
@@ -118,14 +118,14 @@ docker run -it --rm openssl:latest /bin/sh
 ## 注意事项
 
 - 这个仓库依赖 `openssl/` 子模块；如果子模块未初始化，`docker build` 会失败
-- `Dockerfile` 当前直接替换了 Alpine 软件源为清华镜像
+- `Dockerfile` 当前直接替换了 Alpine 软件源为阿里云镜像
 - 镜像默认适合命令行验证和调试，不包含 OpenSSL 自带测试执行流程
 - 由于使用 `no-shared`、`no-module` 等选项，运行行为与系统包形式的 OpenSSL 发行版并不完全相同
 
 ## 参考文档
 
 - [Dockerfile](./Dockerfile)
-- [OpenSSL 上游 README](./openssl/README.md)
-- [OpenSSL 安装说明](./openssl/INSTALL.md)
-- [OpenSSL QUIC 说明](./openssl/README-QUIC.md)
-- [OpenSSL Providers 说明](./openssl/README-PROVIDERS.md)
+- [OpenSSL 上游 README](https://github.com/openssl/openssl/blob/master/README.md)
+- [OpenSSL 安装说明](https://github.com/openssl/openssl/blob/master/INSTALL.md)
+- [OpenSSL QUIC 说明](https://github.com/openssl/openssl/blob/master/README-QUIC.md)
+- [OpenSSL Providers 说明](https://github.com/openssl/openssl/blob/master/README-PROVIDERS.md)

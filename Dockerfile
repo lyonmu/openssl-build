@@ -3,7 +3,7 @@ FROM alpine:latest AS build
 
 LABEL version="3" description="OpenSSL Static Build with Alpine"
 
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories \
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
     && apk update \
     && apk upgrade \
     && apk add --no-cache perl build-base
@@ -35,7 +35,7 @@ WORKDIR /opt
 COPY --from=build /opt/openssl /opt/openssl
 
 # 安装必要运行环境
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories \
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
     && apk update \
     && apk add --no-cache ca-certificates \
     && update-ca-certificates
