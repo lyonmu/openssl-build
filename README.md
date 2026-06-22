@@ -8,10 +8,10 @@
 - `openssl/`：OpenSSL 源码子模块
 - `README.md`：当前项目说明
 
-当前仓库中的 OpenSSL 子模块版本信息来自 [`openssl/VERSION.dat`](https://github.com/openssl/openssl/blob/master/VERSION.dat)：
+当前仓库中的 OpenSSL 子模块版本信息来自 [`openssl/VERSION.dat`](https://github.com/openssl/openssl/blob/openssl-4.0.1/VERSION.dat)：
 
-- 主版本：`4.0.0`
-- 发布日期：`2026-04-14`
+- 主版本：`4.0.1`
+- 发布日期：`2026-06-09`
 
 ## 镜像特性
 
